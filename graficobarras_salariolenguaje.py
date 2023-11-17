@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Reemplaza 'dataset.csv' con el nombre de tu archivo
+# Nombre del archivo
 dataset = pd.read_excel(r'D:\Isaías\Desktop\3er año - 2023\Probabilidad y Estadística\IntegradorPE\dataset_empleados_limpio.xlsx')
 
 # Agrupar por lenguaje de programación y calcular el salario promedio
@@ -15,10 +15,10 @@ plt.xlabel('Lenguaje de Programación')
 plt.ylabel('Salario Promedio')
 plt.title('Salario Promedio por Combinación de lenguajes de programación')
 
-#Rotar ejes
+# Rotar ejes
 plt.xticks(rotation=45, ha='right', fontsize=8)
 
-#Agregar etiquetas a barras
+# Agregar etiquetas a barras
 for bar in bars:
     yval = bar.get_height()
     plt.text(bar.get_x() + bar.get_width()/2, yval, round(yval, 2), ha='center', va='bottom', size=6)

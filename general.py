@@ -9,11 +9,11 @@ import numpy as np
 dataset = pd.read_excel(r'D:\Isaías\Desktop\3er año - 2023\Probabilidad y Estadística\IntegradorPE\dataset_empleados_limpio.xlsx')
 
 # Paso 2: Revisar valores atípicos con un boxplot
-plt.boxplot(dataset[' Salario'])
+plt.boxplot(dataset['Salario'])
 plt.title('Boxplot del Salario')
 plt.show()
 
-plt.boxplot(dataset[' Experiencia_Laboral '])
+plt.boxplot(dataset['Experiencia_Laboral'])
 plt.title('Boxplot de Años de experiencia')
 plt.show()
 
@@ -22,15 +22,15 @@ estadisticas = dataset.describe()
 print(estadisticas)
 
 # Paso 4: Hacer un diagrama de dispersión
-plt.scatter(dataset[' Experiencia_Laboral '], dataset[' Salario'])
+plt.scatter(dataset['Experiencia_Laboral'], dataset['Salario'])
 plt.xlabel('Años de Experiencia')
 plt.ylabel('Salario (en dólares)')
 plt.title('Diagrama de Dispersión: Años de Experiencia vs. Salario')
 plt.show()
 
 # Paso 5: Hacer una regresión lineal entrenando el modelo con un 20% de prueba
-X = dataset[[' Experiencia_Laboral ']]
-y = dataset[' Salario']
+X = dataset[['Experiencia_Laboral']]
+y = dataset['Salario']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -38,7 +38,7 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 # Paso 6: Graficar la recta de regresión en el diagrama de dispersión
-plt.scatter(dataset[' Experiencia_Laboral '], dataset[' Salario'])
+plt.scatter(dataset['Experiencia_Laboral'], dataset['Salario'])
 plt.xlabel('Años de Experiencia')
 plt.ylabel('Salario (en dólares)')
 plt.title('Diagrama de Dispersión con Regresión Lineal')

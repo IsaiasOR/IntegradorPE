@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score
 import numpy as np
 
 # Paso 1: Cargar el archivo
-dataset = pd.read_excel(r'D:\Isaías\Desktop\3er año - 2023\Probabilidad y Estadística\TP integrador\dataset_empleadospython.xlsx')
+dataset = pd.read_excel(r'D:\Isaías\Desktop\3er año - 2023\Probabilidad y Estadística\IntegradorPE\dataset_empleados_limpio.xlsx')
 
 # Paso 2: Revisar valores atípicos con un boxplot
 plt.boxplot(dataset[' Salario'])
@@ -16,6 +16,7 @@ plt.show()
 plt.boxplot(dataset[' Experiencia_Laboral '])
 plt.title('Boxplot de Años de experiencia')
 plt.show()
+
 # Paso 3: Calcular estadísticas descriptivas comunes
 estadisticas = dataset.describe()
 print(estadisticas)

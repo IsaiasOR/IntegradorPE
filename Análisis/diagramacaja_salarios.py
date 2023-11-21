@@ -13,12 +13,5 @@ plt.boxplot(dataset['Salario'])
 plt.title('Boxplot del Salario')
 plt.ylabel('Salario')
 
-# Mostrar datos estadísticos en el gráfico
-plt.text(1, estadisticas['25%'], f"Q1: {estadisticas['25%']}")
-plt.text(1, estadisticas['50%'], f"Q2 (Mediana): {estadisticas['50%']}")
-plt.text(1, estadisticas['75%'], f"Q3: {estadisticas['75%']}")
-plt.text(1, estadisticas['min'], f"Mínimo: {estadisticas['min']}")
-plt.text(1, estadisticas['max'], f"Máximo: {estadisticas['max']}")
-
 # Mostrar gráfico
 plt.show()

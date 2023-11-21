@@ -22,11 +22,11 @@ plt.title('Boxplot de Años de experiencia')
 plt.ylabel('Experiencia laboral')
 
 # Mostrar datos estadísticos en el gráfico
-plt.text(1, estadisticas_exp_laboral['25%'], f"Q1: {estadisticas_exp_laboral['25%']}")
-plt.text(1, estadisticas_exp_laboral['50%'], f"Q2 (Mediana): {estadisticas_exp_laboral['50%']}")
-plt.text(1, estadisticas_exp_laboral['75%'], f"Q3: {estadisticas_exp_laboral['75%']}")
-plt.text(1, estadisticas_exp_laboral['min'], f"Mínimo: {estadisticas_exp_laboral['min']}")
-plt.text(1, estadisticas_exp_laboral['max'], f"Máximo: {estadisticas_exp_laboral['max']}")
+# plt.text(1, estadisticas_exp_laboral['25%'], f"Q1: {estadisticas_exp_laboral['25%']}")
+# plt.text(1, estadisticas_exp_laboral['50%'], f"Q2 (Mediana): {estadisticas_exp_laboral['50%']}")
+# plt.text(1, estadisticas_exp_laboral['75%'], f"Q3: {estadisticas_exp_laboral['75%']}")
+# plt.text(1, estadisticas_exp_laboral['min'], f"Mínimo: {estadisticas_exp_laboral['min']}")
+# plt.text(1, estadisticas_exp_laboral['max'], f"Máximo: {estadisticas_exp_laboral['max']}")
 plt.show()
 
 # Paso 4: Hacer un diagrama de dispersión

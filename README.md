@@ -4,6 +4,6 @@
 
 ### Licenciatura en Sistemas
 
-#### Facultad de Ciencias de la Administración
+### Facultad de Ciencias de la Administración
 
-##### Universidad Nacional de Entre Ríos
+### Universidad Nacional de Entre Ríos

@@ -1,9 +1,9 @@
 # Análisis para el establecimiento de ideas para instituciones educativas que deseen adaptar sus programas de formación 
 
-## Universidad Nacional de Entre Ríos
+## Trabajo práctico integrador de Probabilidad y Estadística
 
-### Facultad de Ciencias de la Administración
+### Licenciatura en Sistemas
 
-#### Licenciatura en Sistemas
+#### Facultad de Ciencias de la Administración
 
-##### Trabajo práctico integrador de Probabilidad y Estadística
+##### Universidad Nacional de Entre Ríos
